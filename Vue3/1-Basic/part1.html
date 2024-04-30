@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue.js 3</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
-    <style>
-      .box {
-        padding: 100px 0;
-        width: 400px;
-        text-align: center;
-        background: #ddd;
-        margin: 20px;
-        display: inline-block;
-      }
-    </style>
   </head>
   <body>
     <h1>Hello, Vue :)</h1>
 
     <div id="app">
+      <!-- <h2>I am the template now</h2> -->
       <div v-if="showBooks">
         <p>{{title}} - {{author}} - {{age}}</p>
+
+        <button v-on:click="age++">Increase age</button>
+        <button v-on:click="age--">Decrease age</button>
+
+        <button @click="changeTitle">Change book title</button>
       </div>
 
       <button @click="toggleShowBooks">
@@ -29,13 +25,7 @@
         <!-- <span v-if="!showBooks">Show Books</span> -->
         <span v-else>Show Books</span>
       </button>
-
-      <br />
-      <!-- Mouse Events -->
-      <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
-      <div class="box" @mouseleave="handleEvent">mouseleave</div>
-      <div class="box" @dblclick="handleEvent">doubleclick</div>
-      <div class="box" @mousemove="handleMouseMove">position - {{x}} {{y}}</div>
+      <div v-show="showBooks">Currently showing books</div>
     </div>
 
     <script src="app.js"></script>

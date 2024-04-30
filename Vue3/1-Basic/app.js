@@ -6,6 +6,8 @@ const app = Vue.createApp({
       title: "One Piece",
       author: "Eiichiro Oda",
       age: 49,
+      x: 0,
+      y: 0,
     };
   },
   methods: {
@@ -14,6 +16,13 @@ const app = Vue.createApp({
     },
     toggleShowBooks() {
       this.showBooks = !this.showBooks;
+    },
+    handleEvent() {
+      console.log();
+    },
+    handleMouseMove(e) {
+      this.x = e.offsetX;
+      this.y = e.offsetY;
     },
   },
 });
