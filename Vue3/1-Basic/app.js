@@ -3,11 +3,16 @@ const app = Vue.createApp({
   data() {
     return {
       showBooks: true,
-      title: "One Piece",
-      author: "Eiichiro Oda",
-      age: 49,
-      x: 0,
-      y: 0,
+      books: [
+        { title: "Overlord", author: "Maruyama Kugane" },
+        { title: "The Lord of the Rings", author: "J. R. R." },
+        { title: "One Piece", author: "Eiichiro Oda" },
+      ],
+      // title: "One Piece",
+      // author: "Eiichiro Oda",
+      // age: 49,
+      // x: 0,
+      // y: 0,
     };
   },
   methods: {
@@ -17,13 +22,13 @@ const app = Vue.createApp({
     toggleShowBooks() {
       this.showBooks = !this.showBooks;
     },
-    handleEvent() {
-      console.log();
-    },
-    handleMouseMove(e) {
-      this.x = e.offsetX;
-      this.y = e.offsetY;
-    },
+    // handleEvent() {
+    //   console.log();
+    // },
+    // handleMouseMove(e) {
+    //   this.x = e.offsetX;
+    //   this.y = e.offsetY;
+    // },
   },
 });
 
