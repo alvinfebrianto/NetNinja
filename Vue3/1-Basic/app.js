@@ -3,15 +3,25 @@ const app = Vue.createApp({
   data() {
     return {
       showBooks: true,
-      url: "https://youtu.be",
       books: [
-        { title: "Overlord", author: "Maruyama Kugane", img: "assets/1.jpg" },
+        {
+          title: "Overlord",
+          author: "Maruyama Kugane",
+          img: "assets/1.jpg",
+          isFav: true,
+        },
         {
           title: "The Way of Kings",
           author: "Brandon Sanderson",
           img: "assets/2.jpg",
+          isFav: false,
         },
-        { title: "One Piece", author: "Eiichiro Oda", img: "assets/3.jpg" },
+        {
+          title: "One Piece",
+          author: "Eiichiro Oda",
+          img: "assets/3.jpg",
+          isFav: true,
+        },
       ],
       // title: "One Piece",
       // author: "Eiichiro Oda",
