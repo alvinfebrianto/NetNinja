@@ -1,21 +1,18 @@
 <template>
   <h1>{{ title }}</h1>
-  <input type="text" ref="name" />
-  <button @click="handleClick">Click Me!</button>
+  <Modal />
+  <Log />
 </template>
 
 <script>
+import Modal from "./components/Modal.vue";
+import Log from "./components/Log.vue";
+
 export default {
   name: "App",
+  components: { Modal, Log },
   data() {
     return { title: "My First Vue App :)" };
-  },
-  methods: {
-    handleClick() {
-      console.log(this.$refs.name);
-      this.$refs.name.classList.add("active");
-      this.$refs.name.focus();
-    },
   },
 };
 </script>
