@@ -1,8 +1,9 @@
 <template>
   <picture>
-    <img src="https://i.ibb.co/3TKTHrs/Code-2024-06-10-09-53-28.png" />
-    <img src="https://i.ibb.co/YBnFygG/Code-2024-06-10-09-54-18.png" />
-    <img src="https://i.ibb.co/FX3ShMX/Code-2024-06-10-09-55-08.png" />
+    <img src="https://i.ibb.co/fxC51F0/Code-2024-06-10-10-14-50.png" />
+    <img src="https://i.ibb.co/2hTRDDc/Code-2024-06-10-10-15-37.png" />
+    <img src="https://i.ibb.co/XWTn5PN/Code-2024-06-10-10-16-17.png" />
+    <img src="https://i.ibb.co/NrYtTjt/Code-2024-06-10-10-16-44.png" />
   </picture>
 </template>
 
