@@ -1,5 +1,6 @@
 <template>
-  <div class="backdrop" @click="closeModal">
+  <!--Batasi click event hanya untuk backdrop (Event Modifiers), tidak ke child elemennya-->
+  <div class="backdrop" @click.self="closeModal">
     <div class="modal" :class="{ sale: theme === 'sale' }">
       <h1>{{ header }}</h1>
       <p>{{ text }}</p>
