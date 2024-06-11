@@ -1,7 +1,8 @@
 <template>
   <picture>
-    <img src="https://i.ibb.co/XSdkdq6/Code-2024-06-11-21-35-45.png" />
-    <img src="https://i.ibb.co/znYRG4d/Code-2024-06-11-21-34-44.png" />
+    <img src="https://i.ibb.co/xC0vHTD/Code-2024-06-11-22-15-04.png" />
+    <img src="https://i.ibb.co/J5VmbXH/Code-2024-06-11-22-14-30.png" />
+    <img src="https://i.ibb.co/FYdxvVm/Code-2024-06-11-22-15-36.png" />
   </picture>
 </template>
 

@@ -10,11 +10,23 @@
       <p>Grab your ninja swag for half price!</p>
     </Modal>
   </div>
+  <div v-if="showModalTwo">
+    <Modal @close="toggleModalTwo">
+      <h1>Sign Up to the Newsletter</h1>
+      <p>For Updates and Promo Codes</p>
+    </Modal>
+  </div>
   <button @click="toggleModal">Open Modal</button>
+  <button @click="toggleModalTwo">Open Modal 2</button>
   <Log />
 </template>
 
 <script>
+// Challenge
+// - Create an extra button to open a different modal
+// - Use the same modal component but pass in a different template (slot)
+// - Use a different method (toggleModalTwo) & data (showModalTwo)
+
 import Modal from "./components/Modal.vue";
 import Log from "./components/Log.vue";
 
@@ -24,14 +36,16 @@ export default {
   data() {
     return {
       title: "My First Vue App :)",
-      header: "Sign Up for the Giveaway!",
-      text: "Grab your ninja swag for half price",
       showModal: false,
+      showModalTwo: false,
     };
   },
   methods: {
     toggleModal() {
       this.showModal = !this.showModal;
+    },
+    toggleModalTwo() {
+      this.showModalTwo = !this.showModalTwo;
     },
   },
 };
@@ -55,5 +69,6 @@ input,
 button {
   display: block;
   margin: 0 auto;
+  margin-top: 6px;
 }
 </style>
