@@ -5,8 +5,9 @@
 
 <script>
 export default {
-  data() {
-    return { id: this.$route.params.id };
-  },
+  props: ["id"],
+  // data() {
+  //   return { id: this.$route.params.id };
+  // },
 };
 </script>
